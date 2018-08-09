@@ -13,4 +13,9 @@ class HomeController < ApplicationController
   def list
   end
 
+  def maj
+    StartScrap.new.save
+    redirect_to list_path
+  end
+
 end
