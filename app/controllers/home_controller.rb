@@ -1,7 +1,6 @@
 class HomeController < ApplicationController
   def index
     @crypto = Crypto.new
-    StartScrap.new.save
   end
 
   def search

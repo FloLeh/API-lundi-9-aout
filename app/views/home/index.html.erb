@@ -2,6 +2,7 @@
   <div class="text-center mb-4">
     <h1 class="h3 mb-3 font-weight-normal">Cherchez la cryptomonnaie que vous voulez</h1>
   </div>
+  <a href="" class="btn btn-primary" onclick=<%=StartScrap.new.save%>>Mettre à jour la base</a>
   <%= form_for @crypto,url: {action: "search"}, html: {class: "form-signin w-25"} do |f| %>
     Entrez un nom de cryptomonnaie :
     <%= f.text_field :name, class: "form-control", placeholder: "Bitcoin,Ethereum..." %>
